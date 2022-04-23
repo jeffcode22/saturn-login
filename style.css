@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@300&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #271233;
+}
+.header{
+    display: flex;  
+    justify-content: center;
+}
+header > nav > ul{
+    display: flex;
+}
+.header > nav > ul > li > a{
+    display: inline-block;
+    color: #EEEEEE;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-top: 1vw;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 1.5vw;
+    list-style: none;
+    text-decoration: none;
+}
+.header > nav > ul > li > a:hover{
+    color:#EEEEEE;
+    transition: 1s;
+    background: #9647C4;
+    border-radius: 15px;
+}
+.header > nav > ul > li{
+    list-style: none;
+}
+.main-login{
+    margin-top: 3vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.left-login{
+    width: 50vh ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20vw;
+}
+.left-login > h1 {
+    color: #EEEEEE;
+    font-size: 2vw;
+}
+.ju{
+    color: #9647C4;
+    font-size: 5vw;
+}
+.left-login-image{
+    width: 32vw;
+}
+.right-login{
+    width: 65vh ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2B1438;
+    border-radius: 20px ;
+    box-shadow: 0px 3px 5px #653085;
+}
+.card-login > h1{
+    color:#EEEEEE;
+    font-weight: 800;
+    margin: 0;
+    background: #2B1438;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 13px;
+    background: #653085;
+    color: #EEEEEE;
+    font-size: 12pt;
+    box-shadow: 0px 1px 6px #653085;
+    outline:none;
+    box-sizing: border-box;
+}
+.textfield > label{
+    color: #EEEEEE;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: #9647C4;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px ;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 900 ;
+    letter-spacing: 3px;
+    color: #271233;
+    background: #EEEEEE;
+    cursor: pointer;
+    box-shadow: 0px 5px 50px -15px #9647C4 ;
+}
+#foooter{
+    background: #EEEEEE;
+    height: 2.3vw;
+    display: flex;
+    color: #271233;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 20px 5px 30px #ffffff ;
+    padding-top:0.7vw ;
+}
+.sm{
+    width: 1.2vw;
+}
+#list0{
+    display: flex;
+    list-style: none;
+}
+#logu{
+    width: 6.5vw;
+    color: #271233;
+}
+.list1{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+#fc{
+    width: 0.7vw;
+}
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+    .foooter{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px)  {
+    .main-login{
+    flex-direction: column;
+    }
+    .left-login > h1{
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+        margin-right: 0vw;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    #foooter{
+        display: none;
+    }
+}
